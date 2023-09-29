@@ -1,0 +1,136 @@
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: rgb(141, 201, 118);
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+
+}
+h1 {
+    font-size: 36px;
+    
+}
+h2 {
+    font-size: 25px;
+   
+}
+
+
+section,
+header{
+    padding: 10px 60px 20px 60px;
+    background-color: white;
+    margin: auto;
+    width: 960px;
+
+
+}
+
+header{
+    display: flex ;
+    justify-content:space-between;
+    background-color: aliceblue;
+    margin-left:auto;
+    position: relative;
+
+    
+}
+header ul {
+    list-style: none;
+}
+
+header li{
+    margin-bottom: 10px;
+}
+
+
+header address img{
+    background-color: aquamarine;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: middle ;
+    border-radius: 5px;
+}
+
+.animation{
+    color: rgb(56, 53, 236);
+}
+.bowl{
+    display: flex;
+    width: 100%;
+    height: calc(100vh-80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+
+
+}
+
+
+.bowl::before{
+    position:absolute;
+    z-index: 2;
+    content: '';
+    height: 250px;
+    width: 250px;
+    border-radius: 40%;
+    right: 50%;
+    left: 60%;
+    bottom: -5%;
+    top: 110%;
+    background: linear-gradient(45deg,#C687F5, #D6BFCE, #EB9F93, #D6A77E,#F7DB8F);
+    animation: object1 16s linear infinite;
+
+}
+.bowl::after{
+    position: absolute;
+    z-index: 2;
+    content: '';
+    height: 90px;
+    width: 90px;
+    border-radius: 40%;
+    right: 35%;
+    left: 60%;
+    top: 105%;
+    background: linear-gradient(45deg,#C687F5, #D6BFCE, #EB9F93, #D6A77E,#F7DB8F);
+    animation: object2 6s linear infinite;
+}
+@keyframes object1{
+
+    50%{
+        right:41%;
+        left: 50%;
+
+    }
+}
+
+@keyframes object2{
+
+    50%{
+        right:41%;
+        left: 50%;
+
+    }
+}
+
+pre{
+
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: space-between;
+
+}
+
+.hobby{
+    list-style: none;
+}
+
+h6{
+    text-align: center;
+}
